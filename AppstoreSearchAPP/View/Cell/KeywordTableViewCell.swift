@@ -11,7 +11,6 @@ import UIKit
 class KeywordTableViewCell: UITableViewCell {
 
     @IBOutlet var keyword: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         

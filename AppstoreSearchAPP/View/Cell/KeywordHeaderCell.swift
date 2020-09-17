@@ -13,7 +13,5 @@ class KeywordHeaderCell: UITableViewCell {
     @IBOutlet weak var headerTitle: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        
     }
 }
