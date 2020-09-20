@@ -1,5 +1,5 @@
 //
-//  KeywordTableViewCell.swift
+//  SearchKeywordCell.swift
 //  AppstoreSearchAPP
 //
 //  Created by 박균호 on 2020/09/19.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class KeywordTableViewCell: UITableViewCell{
+class SearchKeywordCell: UITableViewCell {
     
+    @IBOutlet weak var searchIconImage: UIImageView!
     @IBOutlet weak var keyword: UILabel!
-    @IBOutlet weak var searchIcon: UIImageView!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
     }

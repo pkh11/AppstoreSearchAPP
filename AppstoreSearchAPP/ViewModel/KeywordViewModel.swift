@@ -16,4 +16,12 @@ class KeywordViewModel {
     func searchKeyword(_ searchKeyword: String){
         searchKeywords.append(searchKeyword)
     }
+    func filteredKeyword(_ searhKeyword: String) {
+        searchKeywords = recentKeywords.filter({ (keyword: String) -> Bool in return keyword.lowercased().contains(searhKeyword.lowercased())})
+    }
+    func getRecentKeyword(){
+        if let arrays = AppDelegate.userDefaults.object(forKey: "keyWordList") as? [String] {
+            recentKeywords = arrays
+        }
+    }
 }
